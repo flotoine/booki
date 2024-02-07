@@ -18,15 +18,32 @@
     <div class="main-container">
         <header>
             <div class="header-container">
-                <a class= "lienAccueilBooki" href="#"> <img src="./images/logo/Booki.png"  alt="logo de Booki" class="logoBooki"></a>
+                <div class= "lienAccueilBooki"> <a href="#"> <img src="./images/logo/Booki.png"  alt="logo de Booki" class="logoBooki"></a></div>
+                <div>
                 <nav>
                     <a href="#hebergement">Hébergements </a> <!--Futur vers section ID hebergement -->
                     <a href="#activites">Activités </a> <!--Futur vers section ID activites -->
                 </nav>
+                </div>
             </div>
         </header>
         <main>
+            <div class="intro-recherche">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div class="outil-recherche">
+                <div class="outil-recherche-icone"><img src="./images/icones/geo.png" alt="icone d'emplacement géographique"></div>
+                <div class="outil-recherche-champ">
+                    <form  method="get" action="">
+                        <input type="text" name="lieu" id="lieu" placeholder="Marseille, France"  > <!-- size="40" maxlength="30"-->
+                    </form>
+                </div>
+                <div class="outil-recherche-bouton"><input type="submit" value="Rechercher"></div>
+            </div>
+            <br> <!--à retirer après travail des marges-->
             <div class="hebergements-and-populaires">
+  
                 <section class="hebergements">
 
                 </section>

@@ -29,12 +29,12 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height:79px;
 }
 
 nav {
     display: flex;
-    width: 300px;
+    width: 328px;
     justify-content: space-around;
 }
 
@@ -50,8 +50,14 @@ nav a:hover {
 
 .lienAccueilBooki {
     display: flex;
-    margin: 20px;
-    width: 80px; /** La boite du lien est plus large que le logo si je ne paramètre pas une valeur ici**/
+    width: 121.09px; 
+    height: 79px;
+}
+
+.lienAccueilBooki a {
+    display: flex;
+    margin:30px 30px 30px 0px;
+    width: 60px;
 }
 
 a {
@@ -83,6 +89,17 @@ a {
     font-weight: 700;
 }
 
+.intro-recherche {
+    display: flex;
+    flex-direction: column;
+    height: 79px;
+    row-gap: 8px;
+}
+
+.intro-recherche p,h2 {
+    margin : 0px; /**nécessaire de corriger toutes les marges par défaut ?**/
+}
+
 .neutral-star {
     color: var(--main-bg-color)
 }
@@ -104,6 +121,56 @@ a {
 .hebergements {
     width: 65%;
 }
+
+.outil-recherche {
+    display: flex;
+    height: 49px;
+}
+
+.outil-recherche-icone {
+    display: flex;
+    width: 50px;
+    height: 49px;
+    background-color:#F2F2F2;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #F2F2F2;
+    justify-content: center;
+    align-items: center;
+}
+
+.outil-recherche-icone img {
+    width: 14px;
+    height: 18px;
+}
+
+
+.outil-recherche-champ input {
+    width: 195px;
+    height: 49px;
+    padding: 0 0 0 20px;
+    margin: 0px;
+    border: 1px solid #F2F2F2;
+}
+
+.outil-recherche-bouton {
+    border: 1px solid #0065FC;
+    margin: 0px;
+    border-radius: 0 15px 15px 0;
+    height: 49px;
+    width: 132px;
+    background-color: #0065FC;
+}
+
+.outil-recherche-bouton input {
+    background-color: transparent;
+    color: #FFFFFF;
+    height: 49px;
+    width: 132px;
+    border-radius: 0 15px 15px 0;
+    border: 0px;
+}
+/** gros bricolage par ici, moyen de fusionner, simplifier ?    **/
+
 
 /****** Populaires ***********/
 .populaires {
