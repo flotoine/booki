@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -35,13 +36,20 @@ nav {
     display: flex;
     width: 300px;
     justify-content: space-around;
-    
 }
 
+nav a {
+    border-top: transparent 0.1rem solid;
+}
+
+nav a:hover {
+    color:#0065FC;
+    border-top: #0065FC  0.1rem solid;
+}
 
 .lienAccueilBooki {
     display: flex;
-    margin: 10px;
+    margin: 12px;
     width: 80px; /** La boite du lien est plus large que le logo si je ne paramètre pas une valeur ici**/
 }
 
