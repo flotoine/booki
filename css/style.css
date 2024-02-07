@@ -29,7 +29,7 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
 }
 
 nav {
@@ -40,16 +40,17 @@ nav {
 
 nav a {
     border-top: transparent 0.1rem solid;
+    border-bottom: transparent 0.1rem solid;
+    padding: 15px;
 }
 
 nav a:hover {
     color:#0065FC;
-    border-top: #0065FC  0.1rem solid;
 }
 
 .lienAccueilBooki {
     display: flex;
-    margin: 12px;
+    margin: 20px;
     width: 80px; /** La boite du lien est plus large que le logo si je ne paramètre pas une valeur ici**/
 }
 
@@ -155,6 +156,12 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+@media (min-width: 767.98px){
+    nav a:hover {
+        border-top: #0065FC  0.1rem solid;
+    }
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -191,5 +198,8 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    nav a:hover {
+        border-bottom: #0065FC  0.1rem solid;
+    }
     /* ... */
 }
