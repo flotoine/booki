@@ -35,16 +35,15 @@ nav {
     display: flex;
     width: 300px;
     justify-content: space-around;
-    align-items: flex-start;
+    
 }
 
-.logoBooki {
-   display: flex;
-   height: 20px;
-   width: 20px;
-   align-self: center;
-}
 
+.lienAccueilBooki {
+    display: flex;
+    margin: 10px;
+    width: 80px; /** La boite du lien est plus large que le logo si je ne paramètre pas une valeur ici**/
+}
 
 a {
     color: inherit;
