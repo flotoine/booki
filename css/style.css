@@ -92,7 +92,6 @@ a {
 .intro-recherche {
     display: flex;
     flex-direction: column;
-    height: 79px;
     row-gap: 8px;
 }
 
@@ -125,12 +124,14 @@ a {
 .outil-recherche {
     display: flex;
     height: 49px;
+    padding : 20px 0 20px 0;
 }
 
 .outil-recherche-icone {
     display: flex;
     width: 50px;
-    height: 49px;
+    flex-shrink: 0;
+    height: 47px;
     background-color:#F2F2F2;
     border-radius: 15px 0 0 15px;
     border: 1px solid #F2F2F2;
@@ -146,30 +147,35 @@ a {
 
 .outil-recherche-champ input {
     width: 195px;
-    height: 49px;
+    height: 47px;
     padding: 0 0 0 20px;
     margin: 0px;
-    border: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-right: none;
+    border-left: none;
+    margin-right: -1.5em;
 }
 
-.outil-recherche-bouton {
+.bouton-recherche {
+    display: flex;
     border: 1px solid #0065FC;
     margin: 0px;
     border-radius: 0 15px 15px 0;
-    height: 49px;
+    height: 47px;
     width: 132px;
     background-color: #0065FC;
 }
 
-.outil-recherche-bouton input {
+.bouton-recherche input {
     background-color: transparent;
     color: #FFFFFF;
-    height: 49px;
+    height: 47px;
     width: 132px;
     border-radius: 0 15px 15px 0;
     border: 0px;
 }
-/** gros bricolage par ici, moyen de fusionner, simplifier ?    **/
+ /**gros bricolage par ici, moyen de fusionner, simplifier ?    **/
 
 
 /****** Populaires ***********/
@@ -228,6 +234,10 @@ a {
     nav a:hover {
         border-top: #0065FC  0.1rem solid;
     }
+
+    .bouton-loupe {
+        display: none;
+    }
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -268,5 +278,30 @@ a {
     nav a:hover {
         border-bottom: #0065FC  0.1rem solid;
     }
+
+    .bouton-recherche {
+        display: none;
+    }
+
+    .bouton-loupe {
+        display:flex;
+    }
+
+    .bouton-loupe input {
+        background-color: #0065FC;
+        width: 49px;
+        height: 49px;
+        border-radius: 15px 15px 15px 15px;
+        border: solid 1px #0065FC;
+    }
+
+    .bouton-loupe-image {
+        position: relative;
+        height: 17px;
+        width: auto;
+        right:35px;
+        top:17px; /*****Temporaire, trouver comment fixer à l'objet input******/
+    }
+
     /* ... */
 }
