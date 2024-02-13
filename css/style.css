@@ -309,6 +309,40 @@ a {
 }
 
 
+/****** Activites ***********/
+
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    padding: 0px;
+    margin: 0 15px 0 0;
+    width: 310px;
+}
+
+.activites-cards img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 439px;
+}
+
+.activites-cards .card-content {
+    padding-left: 15px;
+}
+
+.activites-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
