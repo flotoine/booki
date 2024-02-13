@@ -122,10 +122,9 @@ a {
     align-items: center;
 }
 
-.outil-recherche-icone img {
-    width: 14px;
-    height: 18px;
-}
+.outil-recherche-icone i {
+    color: black;
+} 
 
 
 .outil-recherche-champ input {
@@ -180,11 +179,6 @@ a {
     background-color: #DEEBFF;
 }
 
-.filtre img {
-    width: 22px;
-    height: fit-content;
-}
-
 .nombre-logements-disponibles {
     display: flex;
     align-items: center;
@@ -204,12 +198,6 @@ a {
     border-radius: 24px;
     align-items: center;
     justify-content: center;
-}
-
-.icone-i img {
-    width: 4px;
-    height: 10px;
-    
 }
 
 /****** Hebergements And Populaires ***********/
