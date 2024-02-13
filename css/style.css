@@ -29,40 +29,35 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+/******* Header ********/
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    height:79px;
+    align-items: flex-end;
+    margin-bottom: 2%;
 }
 
 nav {
     display: flex;
-    width: 328px;
-    justify-content: space-around;
+    flex-direction: row-reverse;
 }
 
 nav a {
     border-top: transparent 0.1rem solid;
     border-bottom: transparent 0.1rem solid;
-    padding: 15px;
+    padding: 8%;
 }
 
 nav a:hover {
     color:#0065FC;
 }
 
-.lienAccueilBooki {
-    display: flex;
-    width: 121.09px; 
-    height: 79px;
+.lienAccueilBooki a img {
+    max-width: 40%;
 }
 
-.lienAccueilBooki a {
-    display: flex;
-    margin:30px 30px 30px 0px;
-    width: 60px;
-}
+/************/
 
 a {
     color: inherit;
@@ -72,12 +67,6 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
-}
-
-.cartouche-superieur {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .card {
@@ -99,19 +88,75 @@ a {
     font-weight: 700;
 }
 
-.intro-recherche {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-}
-
-.intro-recherche p,h2 {
-    margin : 0px; /**nécessaire de corriger toutes les marges par défaut ?**/
-}
-
 .neutral-star {
     color: var(--main-bg-color)
 }
+/******* Zone de recherche *******/
+
+.cartouche-superieur {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.cartouche-superieur p,h2 {
+    margin : 0 0 0.5% 0; 
+}
+
+/*************Outil recherche *****************/
+
+.outil-recherche {
+    display: flex;
+    max-height: 49px;
+}
+
+.outil-recherche-icone {
+    display: flex;
+    width: 50px;
+    flex-shrink: 0;
+    background-color:#F2F2F2;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #F2F2F2;
+    justify-content: center;
+    align-items: center;
+}
+
+.outil-recherche-icone img {
+    width: 14px;
+    height: 18px;
+}
+
+
+.outil-recherche-champ input {
+    width: 195px;
+    height: 47px;
+    padding: 0 0 0 20px;
+    margin: 0px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-right: none;
+    border-left: none;
+    margin-right: -1.5em;  /*** t'as déjà mis margin au dessus + trouve une autre solution car margin negative est risquée sur responsive, préférer objet plus grand et modifier la position du bouton rechercher ou loupe****/
+}
+
+.bouton-recherche {
+    display: flex;
+    border: 1px solid #0065FC;
+    margin: 0px;
+    border-radius: 0 15px 15px 0;
+    width: 132px;
+    background-color: #0065FC;
+}
+
+.bouton-recherche input {
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 132px;
+    border-radius: 0 15px 15px 0;
+    border: 0px;
+}
+ /**gros bricolage par ici, moyen de fusionner, simplifier ?    **/
 
 /*********** Filtres *****************/
 
@@ -126,7 +171,7 @@ a {
     height: 50px;
     width: fit-content;
     padding: 4px 19px 4px 19px;
-    border-radius: 25px;  /***** 25 sur figma mais mettre 50 pour que ça y ressemble ? ****/
+    border-radius: 50px; 
     gap: 10px;
     align-items: center;
 }
@@ -180,65 +225,11 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
 
-.outil-recherche {
-    display: flex;
-    height: 49px;
-}
 
-.outil-recherche-icone {
-    display: flex;
-    width: 50px;
-    flex-shrink: 0;
-    height: 47px;
-    background-color:#F2F2F2;
-    border-radius: 15px 0 0 15px;
-    border: 1px solid #F2F2F2;
-    justify-content: center;
-    align-items: center;
-}
-
-.outil-recherche-icone img {
-    width: 14px;
-    height: 18px;
-}
-
-
-.outil-recherche-champ input {
-    width: 195px;
-    height: 47px;
-    padding: 0 0 0 20px;
-    margin: 0px;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-    border-right: none;
-    border-left: none;
-    margin-right: -1.5em;
-}
-
-.bouton-recherche {
-    display: flex;
-    border: 1px solid #0065FC;
-    margin: 0px;
-    border-radius: 0 15px 15px 0;
-    height: 47px;
-    width: 132px;
-    background-color: #0065FC;
-}
-
-.bouton-recherche input {
-    background-color: transparent;
-    color: #FFFFFF;
-    height: 47px;
-    width: 132px;
-    border-radius: 0 15px 15px 0;
-    border: 0px;
-}
- /**gros bricolage par ici, moyen de fusionner, simplifier ?    **/
 
 
 /****** Populaires ***********/
@@ -279,14 +270,55 @@ a {
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+    margin: 0px;
 }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
 
+/********** Hébergements **********/
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
 
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+    flex-direction: column;
+    height: 13em;
+    width: 15em;
+}
+
+.hebergements-cards img {
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.hebegements-cards .card-rating {
+    margin-bottom: 5px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
