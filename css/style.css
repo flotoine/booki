@@ -568,6 +568,19 @@ footer {
         margin: 20px;
     }
 
+    .cartouche-superieur {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .outil-recherche {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .outil-recherche-champ input {
+        width: 220px;
+    }
 
     .bouton-recherche {
         display: none;
@@ -575,6 +588,13 @@ footer {
 
     .bouton-loupe {
         display:flex;
+        position: relative;
+        right: 15px;
+    }
+
+    .bouton-loupe i {
+        position: relative;
+        top: 17px; right: 32px;
     }
 
     .bouton-loupe input {
@@ -583,14 +603,69 @@ footer {
         height: 49px;
         border-radius: 15px 15px 15px 15px;
         border: solid 1px #0065FC;
+    }   
+
+    .filtres {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
     }
 
-    .bouton-loupe-image {
-        position: relative;
-        height: 17px;
-        width: auto;
-        right:35px;
-        top:17px; /*****Temporaire, trouver comment fixer à l'objet input******/
+    .filtre {
+        width: 30%;
+        font-size: smaller;
+    }
+
+    .filtre:active {
+        background-color: #DEEBFF;
+    }
+
+    .nombre-logements-disponibles {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nombre-logements-disponibles p{
+        font-size: smaller;
+    }
+   
+    .icone-i {
+        font-size: x-small;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+
+    .populaires{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        height: 400px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+    
+    .populaires-cards .card {
+        margin-top: 10px;
+    }
+
+    .populaires-cards article {
+        width: 100%;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .hebergements{
+        background-color: #FFFFFF!important;
     }
 
     /* ... */
