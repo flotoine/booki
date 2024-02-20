@@ -387,6 +387,7 @@ footer {
     .bouton-loupe {
         display: none;
     }
+
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -523,23 +524,48 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    nav a {
-        display: flex;
-        justify-content: space-between;
+    .main-container {
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
 
+
+    .liensNavigation {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    nav a {
+        width: 50%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        border-bottom: #D9D9D9 solid 0.1rem;
+    }
+
+    nav a:hover {
+        border-bottom: #0065FC solid 0.1rem;
+         /***test***/
+    }
+
+
     .header-container {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .lienAccueilBooki a {
         display: flex;
         justify-content: center;
         margin: 20px;
-        margin-bottom: 20px;
     }
 
 
