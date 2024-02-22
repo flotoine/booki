@@ -588,6 +588,7 @@ footer {
     nav a:active {
         color:#0065FC;
         border-bottom: #0065FC solid 0.1rem;
+        border-top: white solid 0.1rem;
     }
 
 
@@ -640,6 +641,7 @@ footer {
         height: 49px;
         border-radius: 15px 15px 15px 15px;
         border: solid 1px #0065FC;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     }   
 
     .filtres {
@@ -670,17 +672,22 @@ footer {
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        gap: 20px;
     }
 
     .hebergements-and-populaires section {
         border-radius: 0px;
     }
 
+    .hebergements-and-populaires h2 {
+        font-size: large;
+    }
+
     .populaires{
         display: flex;
         flex-direction: column;
         margin-top: 0px;
-        height: 400px;
+        height: 530px;
     }
 
     .populaires-cards {
@@ -688,15 +695,28 @@ footer {
     }
     
     .populaires-cards .card {
-        margin-top: 10px;
+        margin-top: 15px;
+        height: 130px;
     }
 
     .populaires-cards article {
         width: 100%;
     }
 
+    .populaires-cards .card-title {
+        font-size: medium;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: medium;
+    }
+
     .populaires-cards a {
-        width: 100%;
+        width: 320px;
+    }
+
+    .populaires-cards img {
+        height:130px;
     }
 
     .hebergements{
@@ -705,16 +725,26 @@ footer {
     }
 
     .hebergements-cards img {
-        height: 60%;
+        height: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
     
     .hebergements-cards .card {
         margin-top: 20px;
-        height: 11em;
-        width: 300px;
+        height: 170px;
+        width: 320px;
     }
+
+
+    .hebergements-cards .card-title {
+        font-size: small;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: small;
+    }
+
     
    .activites-cards {
         flex-direction: column;
@@ -725,12 +755,16 @@ footer {
    }
    .activites-cards .card {
         margin-top: 20px;
-        height: 200px;
         width: 300px;
+    }
+
+    .activites-cards .card-title {
+        font-size: small;
     }
 
     footer {
         flex-direction: column;
+        font-size: medium;
     }
     /* ... */
 }
