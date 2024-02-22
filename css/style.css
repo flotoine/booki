@@ -139,6 +139,12 @@ a {
     border-left: none;
 }
 
+input::placeholder {
+    font-weight: bold;
+    opacity: 1;
+    color: black;
+    }
+
 .bouton-recherche {
     display: flex;
     border: 1px solid #0065FC;
@@ -398,6 +404,11 @@ footer {
         box-sizing: border-box;
     }
 
+    nav a:active {
+        color:#0065FC;
+        border-top: #0065FC  0.1rem solid;
+    }
+
     .filtres {
         flex-wrap: wrap;
     }
@@ -410,19 +421,39 @@ footer {
     
     .filtre {
         object-fit: contain;
-
     }
+
+    .filtre:active {
+        background-color: #DEEBFF;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+    
+    .hebergements-and-populaires section {
+        padding: 20px;
+    }
+
+    .hebergements-and-populaires h2 {
+        font-size:medium;
+    }
+
+    .hebergements-and-populaires h3 {
+        font-size:smaller;
+        margin-top: 20px;
+        
     }
 
     .hebergements {
         width: 100%;
     }
 
+
+
     .hebergements-cards .card {
         display: flex;
-        margin-top: 33px;
+        margin-top: 20px;
         flex-direction: column;
         height: 8em;
         width: 11em;
@@ -440,7 +471,7 @@ footer {
         margin-bottom: 0px;
     }
     .hebergements-cards .card-title{
-        font-size: smaller;
+        font-size: x-small;
         margin-top: 5px;
         margin-bottom: 0px;
     }
@@ -461,11 +492,9 @@ footer {
     .populaires {
         width: 100%;
         margin-top: 50px;
-        height: 200px;
+        height: 180px;
 
     }
-
-
 
     .populaires-cards {
         display: flex;
@@ -473,6 +502,10 @@ footer {
         justify-content: space-between;
         height: 80px;
     }
+
+    .populaires-cards .card {
+        margin-top: 20px;
+    } 
     
     .populaires-cards img {
         height: 80px;
@@ -481,7 +514,7 @@ footer {
     .populaires-cards .card-content {
         padding-left: 10px;
 
-}
+    }
 
     .populaires-cards a {
         width: 32%;
@@ -497,28 +530,32 @@ footer {
         font-size: 11px;
     }
 
+    .activites h2 {
+        font-size: medium;
+    }
+
     .activites-cards .card {
-        width: 130px;
+        width: 140px;
     
     }
     
     .activites-cards img {
-        height: 160px;
+        height: 140px;
     }
 
     .activites-cards .card-content {
         display: flex;
         align-items: center;
-        height: 60px;
+        height: 50px;
         padding-right: 10px;
     }
 
     .activites-cards .card-title {
-        font-size: smaller;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        
+        font-size: x-small;
+    }
+
+    footer {
+        font-size: x-small;
     }
 }
 
