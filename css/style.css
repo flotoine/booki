@@ -481,14 +481,14 @@ footer {
   .populaires {
     width: 100%;
     margin-top: 50px;
-    height: 180px;
+    height: 200px;
   }
 
   .populaires-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 80px;
+    height: 100px;
   }
 
   .populaires-cards .card {
@@ -496,7 +496,7 @@ footer {
   }
 
   .populaires-cards img {
-    height: 80px;
+    height: 100px;
   }
 
   .populaires-cards .card-content {
